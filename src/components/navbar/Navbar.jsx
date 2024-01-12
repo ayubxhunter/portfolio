@@ -32,6 +32,14 @@ const Navbar = () => {
                     >
                         <img src="/github.png" alt="" />
                     </motion.a>
+                    <motion.a 
+                        href="#"
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5 }}
+                    >
+                        <img src="/resume.png" alt="" />
+                    </motion.a>
                 </div>
             </div>
         </div>
