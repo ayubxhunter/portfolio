@@ -25,14 +25,25 @@ const itemVariants = {
     },
 };
 
-const Links = () => {
+const Links = ({ setOpen }) => { // Receive setOpen as a prop
+    const items = ["About Me", "Skills", "Projects", "CourseWork", "Contact"];
 
-const items = ["About Me", "Skills", "Projects", "CourseWork", "Contact"];
+    // Function to handle link clicks
+    const handleLinkClick = () => {
+        setOpen(false); // Close the sidebar
+    };
 
     return (
         <motion.div className="links" variants={variants}>
-            {items.map((item)=> (
-                <motion.a href={`#${item}`} key={item} variants={itemVariants} whileHover={{scale:1.1}} whileTap={{scale:0.95}}>
+            {items.map((item) => (
+                <motion.a 
+                    href={`#${item}`} 
+                    key={item} 
+                    variants={itemVariants} 
+                    whileHover={{ scale: 1.1 }} 
+                    whileTap={{ scale: 0.95 }}
+                    onClick={handleLinkClick} // Call handleLinkClick when a link is clicked
+                >
                     {item}
                 </motion.a>
             ))}

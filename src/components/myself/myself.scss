@@ -8,26 +8,27 @@
         max-width: 1200px;
         height: 100%;
         margin: auto;
-
-        .textContainer{
-            width: 75%;
+    
+        .textContainer {
+            width: 75%; /* Default width for large screens */
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             gap: 50px;
-
-            h2{
+    
+            h2 {
                 font-size: 40px;
                 color: #52d6f4;
                 letter-spacing: 2px;
             }
-
-            h1{
+    
+            h1 {
                 font-size: 60px;
             }
-            .buttons{
-                button{
+    
+            .buttons {
+                button {
                     padding: 20px;
                     border: 1px solid white;
                     border-radius: 10px;
@@ -37,18 +38,112 @@
                     font-weight: 300;
                 }
             }
-
-            img{
+    
+            img {
                 width: 50px;
             }
         }
     }
+    
+    /* Smaller devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        .wrapper {
+            max-width: 50%; /* Use full width for small screens */
+            padding: 0 20px; /* Add padding so content doesn't touch the edges */
+        }
+    
+        .textContainer {
+            width: 90%; /* Slightly less width on small screens to allow for padding */
+            padding: 0 5%; /* Add padding to prevent text from touching the edges */
+            gap: 20px; /* Adjust gap for smaller screens */
+    
+            h2 {
+                font-size: 5vw; /* Smaller font size for small devices */
+            }
+    
+            h1 {
+                font-size: 6vw; /* Smaller font size for small devices */
+            }
+    
+            .buttons {
+                button {
+                    padding: 10px; /* Adjust padding for smaller screens */
+                }
+            }
+        }
+    }
+    
+    /* Medium devices (laptops, 768px and up to 1280px) */
+    @media only screen and (min-width: 768px) and (max-width: 1280px) {
+        .wrapper {
+            max-width: 75%; /* Adjust max-width for medium screens */
+            padding: 0 15px; /* Adjust padding for medium screens */
+        }
+    
+        .textContainer {
+            width: 85%; /* Adjust width for medium screens */
+            padding: 0 7.5%; /* Adjust padding for medium screens */
+            gap: 30px; /* Adjust gap for medium screens */
+    
+            h2 {
+                font-size: 3.5vw; /* Adjust font size for medium devices */
+            }
+    
+            h1 {
+                font-size: 5vw; /* Adjust font size for medium devices */
+            }
+    
+            .buttons {
+                button {
+                    padding: 15px; /* Adjust padding for medium screens */
+                }
+            }
+        }
+    }
+    
+    /* Large devices (desktops, 1536px and up) */
+    @media only screen and (min-width: 1536px) {
+        .wrapper {
+            max-width: 1600px; /* Default max-width for large screens */
+            padding: 0; /* Remove padding for large screens */
+        }
+    
+        .textContainer {
+            width: 75%; /* Default width for large screens */
+            padding: 0; /* Remove padding for large screens */
+            gap: 50px; /* Default gap for large screens */
+    
+            h2 {
+                font-size: 40px; /* Fixed font size for large devices */
+            }
+    
+            h1 {
+                font-size: 60px; /* Fixed font size for large devices */
+            }
+    
+            .buttons {
+                button {
+                    padding: 20px; /* Default padding for large screens */
+                }
+            }
+        }
+    }
+    
 
-    .imageContainer{
+    .imageContainer {
         height: 100%;
         position: absolute;
         top: 0;
         right: 0;
+        width: 40%;
+        max-width: 1200px;
+    }
+
+    .imageContainer img {
+        /* Makes the image responsive */
+        width: 100%; /* Use a percentage of the container for the width */
+        height: auto; /* Maintains the aspect ratio */
+        /* Optionally, you can add max-width here if you want to limit how large the image can grow */
     }
 
     .slidingContainer{
