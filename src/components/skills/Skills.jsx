@@ -5,7 +5,7 @@ import "./skills.scss";
 const Skills = () => {
     const skillsData = [
         { src: "/HTML.png", text: "HTML" },
-        { src: "/CSS.png", text: "CSS" },
+        { src: "/css.png", text: "CSS" },
         { src: "/JavaScript.png", text: "JavaScript" },
         { src: "/react.png", text: "React" },
         { src: "/framer.png", text: "Framer" },
