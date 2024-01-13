@@ -1,29 +1,50 @@
 import "./listofprojects.scss";
+import {motion } from "framer-motion"
+
 
 const Listofprojects = () => {
     const projects = [
-        { img: "/placeholder2.jpeg", name: "Budgeting Web App" },
-        { img: "/placeholder.webp", name: "AWS Photo Album Web App" },
-        { img: "/Inventory.png.jpeg", name: "Inventory Management System" },
-        { img: "/Portfolio.png", name: "Professional Portfolio" },
+        { img: "/budgeting.png", name: "Spendwise - Budgeting Web App" },
+        { img: "/aws.webp", name: "AWSnap - AWS Photo Album Web App" },
+        { img: "/Inventory.png", name: "Inventory Management System" },
+        { img: "/personal.png", name: "Professional Portfolio" },
     ];
 
+    const imageTransition = {
+        delay: .5
+    };
+
     const githubUrl = "https://github.com/ayubxhunter"; // URL to my GitHub
+
+    const navigateToProject = (projectName) => {
+        const projectId = projectName.replace(/\s+/g, '');
+        const projectElement = document.getElementById(projectId);
+        if (projectElement) {
+            projectElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
         <div className="listofprojects">
             <h1>Projects</h1>
             <div className="projectsContainer">
                 {projects.map((project, index) => (
-                    <div className="projectItem" key={index}>
-                        <img src={project.img} alt={project.name} />
-                        <p>{project.name}</p>
-                        <a href={githubUrl} target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                    </div>
+                    <div className="projectItem" key={index} onClick={() => navigateToProject(project.name)}>
+                    <motion.img 
+                        src={project.img} 
+                        alt={project.name} 
+                        transition={imageTransition}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                    />
+                    <p>{project.name}</p>
+                    <p className="hoverText">Click Icon to Learn More</p> {/* Added text */}
+                    <a href={githubUrl} target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>                
                 ))}
             </div>
         </div>
     );
-}
+};
 
 export default Listofprojects;

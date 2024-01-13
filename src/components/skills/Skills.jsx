@@ -4,14 +4,14 @@ import "./skills.scss";
 
 const Skills = () => {
     const skillsData = [
-        { src: "/HTML.png", text: "HTML" },
+        { src: "/html.png", text: "HTML" },
         { src: "/css.png", text: "CSS" },
         { src: "/JavaScript.png", text: "JavaScript" },
         { src: "/react.png", text: "React" },
         { src: "/framer.png", text: "Framer" },
         { src: "python.png", text: "Python" },
         { src: "/java.png", text: "Java" },
-        { src: "/C++.png", text: "C++" },
+        { src: "/golang.png", text: "Go" },
         { src: "/mysql.png", text: "SQL" },
         { src: "/git.png", text: "Git" },
     ];
@@ -22,7 +22,7 @@ const Skills = () => {
     const startAnimation = (entries) => {
         const [entry] = entries;
         if (entry.isIntersecting) {
-            controls.start(i => ({ rotate: 360, scale: 1, transition: { delay: i * 0.5 } }));
+            controls.start(i => ({ rotate: 360, scale: 1, transition: { delay: i * 0.2 } }));
         }
     };
 

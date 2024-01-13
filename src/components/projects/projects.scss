@@ -1,3 +1,97 @@
 .projects{
         background: linear-gradient(90deg, #333333, #333333);
-}
+        .projectSection {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 50px 0;
+        
+                .projectContent {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 30px;
+        
+                    .projectImage {
+                        border-radius: 15px;
+                        width: 950px;
+                        height: 600px;
+                    }
+        
+                    .projectInfo {
+                        width: 40%;
+        
+                        h2 {
+                            font-size: 2.5em;
+                            margin-bottom: 20px
+                        }
+        
+                        p {
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+        
+            @media (min-width: 640px) {
+                .projectSection .projectContent {
+                    .projectImage {
+                        width: 80%; // Adjust as needed
+                    }
+            
+                    .projectInfo {
+                        width: 60%; // Adjust as needed
+                    }
+                }
+            }
+            
+            // Medium devices (tablets, 768px and up)
+            @media (min-width: 768px) {
+                .projectSection .projectContent {
+                    flex-direction: row; // Row layout for larger tablets
+            
+                    .projectImage {
+                        width: 60%; // Adjust as needed
+                    }
+            
+                    .projectInfo {
+                        width: 40%; // Adjust as needed
+                    }
+                }
+            }
+            
+            // Large devices (desktops, 1024px and up)
+            @media (min-width: 1024px) {
+                .projectSection .projectContent {
+                    .projectImage {
+                        width: 50%; // Adjust as needed
+                    }
+            
+                    .projectInfo {
+                        width: 50%; // Adjust as needed
+                    }
+                }
+        }
+        @media (min-width: 1280px) {
+                .projectSection .projectContent {
+                .projectImage {
+                width: 750px; // Fixed width for larger desktops
+                height: auto;
+                }
+                .projectInfo {
+                        width: 40%; // Adjust as needed
+                    }
+                }
+        }
+        @media (min-width: 1536px) {
+                .projectSection .projectContent {
+                .projectImage {
+                width: 1050px; // Maintain fixed width or adjust as needed
+                height: auto;
+                }
+                .projectInfo {
+                        // Optionally, adjust the width or other styles if needed
+                    }
+                }
+        }
+}            

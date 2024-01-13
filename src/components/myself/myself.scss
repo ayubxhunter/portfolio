@@ -5,7 +5,7 @@
     position: relative;
 
     .wrapper {
-        max-width: 1200px;
+        max-width: 1250px;
         height: 100%;
         margin: auto;
     
@@ -142,8 +142,8 @@
     .imageContainer img {
         /* Makes the image responsive */
         width: 100%; /* Use a percentage of the container for the width */
-        height: auto; /* Maintains the aspect ratio */
-        /* Optionally, you can add max-width here if you want to limit how large the image can grow */
+        height: 100%; /* Maintains the aspect ratio */
+        object-fit: cover;
     }
 
     .slidingContainer{
