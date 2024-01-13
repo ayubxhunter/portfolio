@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 import Skills from "./components/skills/skills";
 import Projects from "./components/projects/projects";
 import Listofprojects from "./components/listofprojects/Listofprojects";
+import Coursework from "./components/coursework/coursework";
 
 const App = () => {
   return <div>
@@ -19,7 +20,9 @@ const App = () => {
       <Listofprojects/>
     </section>
       <Projects />
-    <section id ="CourseWork">Realative CourseWork</section>
+    <section id ="CourseWork">
+      <Coursework/>
+    </section>
     <section id="Contact">Contact</section>
   </div>
 };

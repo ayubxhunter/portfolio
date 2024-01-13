@@ -142,7 +142,7 @@
     .imageContainer img {
         /* Makes the image responsive */
         width: 100%; /* Use a percentage of the container for the width */
-        height: 100%; /* Maintains the aspect ratio */
+        height: auto; /* Maintains the aspect ratio */
         object-fit: cover;
     }
 
