@@ -38,7 +38,7 @@ const Coursework = () => {
         { 
             title: "User-Interface Design", 
             description: (<span>
-                <li><span> Designed a user-centric interface for the Haptic Wearable Belt.</span></li>
+                <li><span> Designed a user-centric interface for a Haptic Wearable Belt.</span></li>
                 <li><span> Created a user study research protocol to <span style ={{ color: '#52d6f4'}}><strong>gather qualitative data</strong></span>.</span></li>
         </span>)
     },

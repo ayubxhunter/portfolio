@@ -1,7 +1,7 @@
 import "./app.scss"
 import Myself from "./components/myself/Myself";
 import Navbar from "./components/navbar/Navbar";
-import Skills from "./components/skills/skills";
+import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/projects";
 import Listofprojects from "./components/listofprojects/Listofprojects";
 import Coursework from "./components/coursework/coursework";

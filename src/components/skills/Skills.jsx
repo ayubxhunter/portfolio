@@ -1,23 +1,35 @@
+import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import "./skills.scss";
 
 const Skills = () => {
     const skillsData = [
-        { src: "/html.png", text: "HTML" },
-        { src: "/css.png", text: "CSS" },
-        { src: "/JavaScript.png", text: "JavaScript" },
-        { src: "/react.png", text: "React" },
-        { src: "/framer.png", text: "Framer" },
-        { src: "python.png", text: "Python" },
-        { src: "/java.png", text: "Java" },
-        { src: "/golang.png", text: "Go" },
-        { src: "/mysql.png", text: "SQL" },
-        { src: "/git.png", text: "Git" },
+        { src: "/html.png", text: "HTML", navigationId: "Spendwise-BudgetingWebApp" },
+        { src: "/css.png", text: "CSS", navigationId: "AWSnap-AWSPhotoAlbumWebApp" },
+        { src: "/JavaScript.png", text: "JavaScript", navigationId: "Spendwise-BudgetingWebApp" },
+        { src: "/react.png", text: "React", navigationId: "ProfessionalPortfolio" },
+        { src: "/framer.png", text: "Framer", navigationId: "ProfessionalPortfolio" },
+        { src: "python.png", text: "Python", navigationId: "Spendwise-BudgetingWebApp"  },
+        { src: "/java.png", text: "Java", navigationId: "InventoryManagementSystem" },
+        { src: "/golang.png", text: "Go", navigationId: "AWSnap-AWSPhotoAlbumWebApp" },
+        { src: "/mysql.png", text: "SQL", navigationId: "Spendwise-BudgetingWebApp" },
+        { src: "/git.png", text: "Git", navigationId: "CourseWork", applyGlow: true }
     ];
 
     const controls = useAnimation();
     const ref = useRef(null);
+
+    const navigateToSection = (navigationId, shouldApplyGlow = false) => {
+        const section = document.getElementById(navigationId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+            if (shouldApplyGlow) {
+                addGlowEffect("Objects and Design");
+            }
+        }
+    };
+
 
     const startAnimation = (entries) => {
         const [entry] = entries;
@@ -49,15 +61,16 @@ const Skills = () => {
             <div className="imageContainer">
                 {skillsData.map((skill, i) => (
                     <motion.div 
-                      className="imageBox"
-                      key={i}
-                      initial={{ scale: 0 }}
-                      custom={i}
-                      animate={controls}
-                    >
-                        <img src={skill.src} alt={skill.text} />
-                        <p>{skill.text}</p>
-                    </motion.div>
+                    className="imageBox"
+                    key={i}
+                    initial={{ scale: 0 }}
+                    custom={i}
+                    animate={controls}
+                    onClick={() => navigateToSection(skill.navigationId, skill.applyGlow)}
+                >
+                    <img src={skill.src} alt={skill.text} />
+                    <p>{skill.text}</p>
+                </motion.div>
                 ))}
             </div>
         </div>
