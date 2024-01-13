@@ -30,15 +30,24 @@ const sliderVariants = {
     },
 };
 
+
 const Myself = () => {
+
+    const scrollToContact = () => {
+        const contactSection = document.getElementById('Contact');
+        if(contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <div className="myself">
             <div className="wrapper">  
                 <motion.div className="textContainer" variants ={textVariants} initial="initial" animate="animate">
                     <motion.h2 variants ={textVariants}>Ayub Hunter</motion.h2>
                     <motion.h1 variants ={textVariants}>Software Engineer and Web Developer</motion.h1>
-                    <motion.div variants ={textVariants} className="buttons">
-                        <motion.button variants ={textVariants}>Contact Me</motion.button>
+                    <motion.div variants={textVariants} className="buttons">
+                        <motion.button variants={textVariants} onClick={scrollToContact}>Contact Me</motion.button>
                     </motion.div>
                     <motion.img variants ={textVariants} src="/scroll.png" alt="" />
                 </motion.div>

@@ -11,39 +11,37 @@ const Navbar = () => {
                 <motion.span 
                     initial={{ opacity:0, scale:0.5 }} 
                     animate={{ opacity:1, scale:1 }} 
-                    transition={{ duration:0.5 }}
-                    >
-                    
+                    transition={{ duration:0.5 }}>
                 </motion.span>
                 <div className="social">
                     <motion.a 
-                        href="#"
+                        href="https://www.linkedin.com/in/ayub-hunter/"
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5 }}
-                    >
-                        <img src="/linkedin.png" alt="" />
+                        target="_blank" rel="noopener noreferrer">
+                        <img src="/linkedin.png" alt="LinkedIn" />
                     </motion.a>
                     <motion.a 
-                        href="#"
+                        href="https://github.com/ayubxhunter"
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5 }}
-                    >
-                        <img src="/github.png" alt="" />
+                        target="_blank" rel="noopener noreferrer">
+                        <img src="/github.png" alt="GitHub" />
                     </motion.a>
                     <motion.a 
-                        href="#"
+                        href="https://drive.google.com/file/d/1hmQUHp48wM2HgRWaBtPk97sIRVrSht4X/view?usp=sharing"
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5 }}
-                    >
-                        <img src="/resume.png" alt="" />
+                        target="_blank" rel="noopener noreferrer">
+                        <img src="/resume.png" alt="Resume" />
                     </motion.a>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Navbar;

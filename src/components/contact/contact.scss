@@ -1,0 +1,88 @@
+.contact {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: #333333;
+    padding: 70px;
+
+    .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        h1 {
+            font-size: 80px;
+            line-height: 88px;
+
+            // Adjust font size for smaller devices
+            @media (max-width: 768px) { font-size: 60px; line-height: 68px; }
+            @media (max-width: 640px) { font-size: 40px; line-height: 48px; }
+        }
+
+        span {
+            font-weight: 300;
+        }
+    }
+
+    .formContainer {
+        flex: 1;
+        position: relative;
+
+        .phoneSvg {
+            stroke: #1C274C;
+            position: absolute;
+            margin: auto;
+            z-index: 1;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            z-index: 2;
+
+            input, textarea {
+                padding: 20px;
+                background: transparent;
+                border: 1px solid white;
+                color: white;
+                border-radius: 5px;
+                z-index: 2;
+            }
+
+            button {
+                padding: 20px;
+                border: none;
+                background-color: #52d6f4;
+                cursor: pointer;
+                font-weight: 500;
+                z-index: 2;
+
+            }
+        }
+    }
+
+    // Responsive adjustments for smaller screens
+    @media (max-width: 1280px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+
+        .textContainer, .formContainer {
+            flex: none;
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+}

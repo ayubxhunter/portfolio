@@ -5,6 +5,7 @@ import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/projects";
 import Listofprojects from "./components/listofprojects/Listofprojects";
 import Coursework from "./components/coursework/coursework";
+import Contact from "./components/contact/contact";
 
 const App = () => {
   return <div>
@@ -23,7 +24,9 @@ const App = () => {
     <section id ="CourseWork">
       <Coursework/>
     </section>
-    <section id="Contact">Contact</section>
+    <section id="Contact">
+      <Contact/>
+    </section>
   </div>
 };
 
