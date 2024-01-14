@@ -1,13 +1,34 @@
+@import "../../app.scss";
+
 .navbar {
     height: 100px;
 
+    @include tablet {
+        height: 75px;
+    }
+
+    @include mobile {
+        height: 60px;
+    }
+
     .wrapper {
-        max-width: 1600px;
+        max-width: 1200px;
         margin: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 100%;
+
+        @include tablet {
+            max-width: fit-content;
+            padding: 0 20px;
+        }
+
+        @include mobile {
+            height: 100%;
+            justify-content: flex-end;
+            padding: 10px;
+        }
 
         span {
             font-weight: bold;
@@ -18,93 +39,22 @@
         display: flex;
         gap: 20px;
 
+        @include tablet {
+            gap: 10px;
+        }
+
         img {
             width: 30px;
             height: 30px;
-        }
-    }
-}
 
-/* Smaller devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .navbar {
-        height: 75px;
-
-        .wrapper {
-            max-width: fit-content;
-            padding: 0 20px;
-        }
-
-        .social {
-            gap: 10px;
-
-            img {
-                width: 20px;
-                height: 20px;
+            @include tablet {
+                width: 35px;
+                height: 35px;
             }
-        }
-    }
-}
 
-/* Medium devices (landscape tablets, min 768px and max 1024) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .navbar {
-        height: 75px;
-
-        .wrapper {
-            max-width: fit-content;
-            padding: 0 20px;
-        }
-
-        .social {
-            gap: 10px;
-
-            img {
-                width: 20px;
-                height: 20px;
-            }
-        }
-    }
-}
-
-/* Large devices (laptops/desktops, min 1025px and max 1280px) */
-@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-    .navbar {
-        height: 75px;
-
-        .wrapper {
-            max-width: fit-content;
-            padding: 0 20px;
-        }
-
-        .social {
-            gap: 10px;
-
-            img {
-                width: 20px;
-                height: 20px;
-            }
-        }
-    }
-}
-
-/* Extra large devices (large laptops and desktops, min 1281px and max 1600px) */
-@media only screen and (min-width: 1281px) and (max-width: 1600px) {
-    .navbar {
-        height: 100px;
-
-        .wrapper {
-            max-width: 1200px;
-            padding: 0 20px;
-        }
-
-        .social {
-            display: flex;
-            gap: 20px;
-
-            img {
-                width: 30px;
-                height: 30px;
+            @include mobile {
+                width: 25px;
+                height: 25px;
             }
         }
     }

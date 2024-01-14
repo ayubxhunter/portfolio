@@ -1,30 +1,59 @@
+@import "../../app.scss";
+
+
 .myself{
     height: calc(100vh - 100px);
     background: linear-gradient((180deg, #6D6D6D, #333333));
     overflow: hidden;
     position: relative;
+    
 
     .wrapper {
         max-width: 1250px;
         height: 100%;
         margin: auto;
+        @include mobile {
+            padding: 0; // Remove padding for mobile
+            height: 100%; // Ensure wrapper takes full height on mobile
+        }
+
     
         .textContainer {
-            width: 75%; /* Default width for large screens */
+            width: 50%; /* Default width for large screens */
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 50px;
+            gap: 40px;
+
+            @include mobile {
+                width: 150%; // Full width of the viewport
+                padding: 0 00px; // Add some padding on the sides
+                box-sizing: border-box; // Make sure padding is included in the width
+                position: relative; // Position relative to allow absolute positioning inside
+                z-index: 2;
+                height: 40%;
+                gap: 2px;
+            }
+
     
             h2 {
                 font-size: 40px;
                 color: #52d6f4;
                 letter-spacing: 2px;
+
+                @include mobile{
+                    top: 20;
+                    font-size: 26px;
+                }
             }
     
             h1 {
                 font-size: 60px;
+
+                @include mobile{
+                    font-size: 26px;
+                }
             }
     
             .buttons {
@@ -138,6 +167,14 @@
         right: 0;
         width: 40%;
         max-width: 1200px;
+
+        @include mobile {
+            position: absolute;
+            bottom: 0; // Stick to the bottom
+            width: 100%; // Full width of the viewport
+            max-width: none; // Override any max-width set previously
+            z-index: 1; // Lower z-index to be under the text
+        }
     }
 
     .imageContainer img {
@@ -145,6 +182,12 @@
         width: 100%; /* Use a percentage of the container for the width */
         height: auto; /* Maintains the aspect ratio */
         object-fit: cover;
+        @include mobile {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            bottom: 0; // Align to bottom
+        }
     }
 
     .slidingContainer{
