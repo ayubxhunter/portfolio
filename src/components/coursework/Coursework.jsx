@@ -3,7 +3,7 @@ import "./coursework.scss";
 const Coursework = () => {
     const courses = [
         { 
-            title: "Computer Orginization and Programming", 
+            title: "Computer Organization and Programming", 
             description: (<span>
 
                 <li><span>Explored digital logic structures, the Von Neumann model,

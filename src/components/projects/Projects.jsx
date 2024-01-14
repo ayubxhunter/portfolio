@@ -4,18 +4,17 @@ const items = [
     {
         id:1,
         title:"Spendwise - Budgeting Web App",
-        img:"",
+        img:"/Spendwise.png",
         desc:(
             <span>
                 SpendWise is an innovative budgeting application designed for optimal efficiency and user convenience. 
-                Combining a <span style ={{ color: '#52d6f4'}}><strong>React.js and Tailwind CSS front-end </strong></span> 
-                 with a <span style ={{ color: '#52d6f4'}}><strong>Python-based backend</strong></span>, 
+                Utilizing <span style ={{ color: '#52d6f4'}}><strong>React.js and Tailwind CSS for front-end </strong></span> 
+                <span style ={{ color: '#52d6f4'}}><strong></strong></span>, 
                 it streamlines personal finance management. 
-                Utilizing <span style ={{ color: '#52d6f4'}}><strong>third-party banking APIs</strong></span>, 
-                it allows users to automatically upload transaction data, 
-                <span style ={{ color: '#52d6f4'}}><strong> reducing manual entry by 85%</strong></span>. 
-                The backend, powered by <span style ={{ color: '#52d6f4'}}><strong>Python's Flask framework</strong></span>, 
-                offers <span style ={{ color: '#52d6f4'}}><strong>efficient data processing </strong></span> 
+                Through the integration of <span style ={{ color: '#52d6f4'}}><strong>CSV file uploads,</strong></span> users can effortlessly import bulk transaction data, bypassing time-
+                consuming manual entry.
+                <span style ={{ color: '#52d6f4'}}><strong> Reducing manual entry by 85%</strong></span>. 
+                The site offers <span style ={{ color: '#52d6f4'}}><strong>efficient data processing </strong></span> 
                 for expense categorization, spending trend visualization, 
                 and <span style ={{ color: '#52d6f4'}}><strong>customizable financial goals</strong></span>. 
                 SpendWise is not just a tool but a comprehensive solution for informed financial decision-making, 

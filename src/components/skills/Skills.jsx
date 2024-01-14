@@ -10,10 +10,10 @@ const Skills = () => {
         { src: "/JavaScript.png", text: "JavaScript", navigationId: "Spendwise-BudgetingWebApp" },
         { src: "/react.png", text: "React", navigationId: "ProfessionalPortfolio" },
         { src: "/framer.png", text: "Framer", navigationId: "ProfessionalPortfolio" },
-        { src: "python.png", text: "Python", navigationId: "Spendwise-BudgetingWebApp"  },
+        { src: "python.png", text: "Python", navigationId: "CourseWork"  },
         { src: "/java.png", text: "Java", navigationId: "InventoryManagementSystem" },
         { src: "/golang.png", text: "Go", navigationId: "AWSnap-AWSPhotoAlbumWebApp" },
-        { src: "/mysql.png", text: "SQL", navigationId: "Spendwise-BudgetingWebApp" },
+        { src: "/sass.png", text: "Sass", navigationId: "ProfessionalPortfolio" },
         { src: "/git.png", text: "Git", navigationId: "CourseWork", applyGlow: true }
     ];
 
