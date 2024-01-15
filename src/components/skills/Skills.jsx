@@ -12,7 +12,7 @@ const Skills = () => {
         { src: "/framer.png", text: "Framer", navigationId: "ProfessionalPortfolio" },
         { src: "python.png", text: "Python", navigationId: "CourseWork"  },
         { src: "/java.png", text: "Java", navigationId: "InventoryManagementSystem" },
-        { src: "/golang.png", text: "Go", navigationId: "AWSnap-AWSPhotoAlbumWebApp" },
+        { src: "/tailwind.png", text: "Tailwind", navigationId: "Spendwise-BudgetingWebApp" },
         { src: "/sass.png", text: "Sass", navigationId: "ProfessionalPortfolio" },
         { src: "/git.png", text: "Git", navigationId: "CourseWork", applyGlow: true }
     ];

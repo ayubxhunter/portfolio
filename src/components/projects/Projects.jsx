@@ -8,8 +8,7 @@ const items = [
         desc:(
             <span>
                 SpendWise is an innovative budgeting application designed for optimal efficiency and user convenience. 
-                Utilizing <span style ={{ color: '#52d6f4'}}><strong>React.js and Tailwind CSS for front-end </strong></span> 
-                <span style ={{ color: '#52d6f4'}}><strong></strong></span>, 
+                Utilizing <span style ={{ color: '#52d6f4'}}><strong>React.js and Tailwind CSS for front-end, </strong></span> 
                 it streamlines personal finance management. 
                 Through the integration of <span style ={{ color: '#52d6f4'}}><strong>CSV file uploads,</strong></span> users can effortlessly import bulk transaction data, bypassing time-
                 consuming manual entry.
