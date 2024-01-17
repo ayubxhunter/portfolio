@@ -23,7 +23,7 @@ const items = [
     {
         id:2,
         title:"AWSnap - AWS Photo Album Web App",
-        img:"",
+        img:"AWS VideoPlayer.png",
         desc:(
             <span>
                 AWSnap is a streamlined web application that 
