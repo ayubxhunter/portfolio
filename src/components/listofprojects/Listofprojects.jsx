@@ -5,7 +5,7 @@ import {motion } from "framer-motion"
 const Listofprojects = () => {
     const projects = [
         { img: "/budgeting.png", name: "Spendwise - Budgeting Web App" },
-        { img: "/aws.webp", name: "AWSnap - AWS Photo Album Web App" },
+        { img: "/Chess.png", name: "Chess Game" },
         { img: "/Inventory.png", name: "Inventory Management System" },
         { img: "/personal.png", name: "Professional Portfolio" },
     ];

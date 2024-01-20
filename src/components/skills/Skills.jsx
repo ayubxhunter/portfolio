@@ -6,7 +6,7 @@ import "./skills.scss";
 const Skills = () => {
     const skillsData = [
         { src: "/html.png", text: "HTML", navigationId: "Spendwise-BudgetingWebApp" },
-        { src: "/css.png", text: "CSS", navigationId: "AWSnap-AWSPhotoAlbumWebApp" },
+        { src: "/css.png", text: "CSS", navigationId: "Spendwise-BudgetingWebApp" },
         { src: "/JavaScript.png", text: "JavaScript", navigationId: "Spendwise-BudgetingWebApp" },
         { src: "/react.png", text: "React", navigationId: "ProfessionalPortfolio" },
         { src: "/framer.png", text: "Framer", navigationId: "ProfessionalPortfolio" },

@@ -22,24 +22,21 @@ const items = [
     },
     {
         id:2,
-        title:"AWSnap - AWS Photo Album Web App",
-        img:"AWS VideoPlayer.png",
+        title:"Chess Game",
+        img:"/ChessGUI.png",
         desc:(
             <span>
-                AWSnap is a streamlined web application that 
-                exemplifies <span style={{ color: '#52d6f4'}}><strong>efficiency </strong></span> 
-                and user-centered design in digital photo management. Built on a 
-                suite of <span style={{ color: '#52d6f4'}}><strong>AWS services</strong></span>, 
-                including <span style={{ color: '#52d6f4'}}><strong>Amazon S3, AWS Lambda, Amazon API Gateway, AWS DynamoDB</strong></span>, 
-                and <span style={{ color: '#52d6f4'}}><strong>AWS IAM</strong></span>, this project integrates robust 
-                cloud infrastructure with an intuitive interface. The application allows users to seamlessly upload, view, 
-                and delete photos. Its high-performance backend, supported 
-                by <span style={{ color: '#52d6f4'}}><strong>AWS Lambda</strong></span>, 
-                <span style={{ color: '#52d6f4'}}><strong> optimizes</strong></span> image processing tasks, 
-                while <span style={{ color: '#52d6f4'}}><strong>Amazon S3</strong></span> ensures secure and scalable storage. 
-                The user-friendly UI, designed with <span style={{ color: '#52d6f4'}}><strong>HTML, Tailwind CSS, and JavaScript</strong></span>, 
-                features a gallery of uploaded images with an easy deletion option. AWSnap stands 
-                as a testament to the  successful implementation of cloud technology in enhancing everyday digital experiences.
+                I designed and developed an advanced GUI-based chess game application using Java. 
+                This project allowed me to demonstrate my <span style ={{ color: '#52d6f4'}}><strong>deep understanding and proficiency</strong></span> in Java Swing, 
+                particularly in the realms of interface design and event handling. I <span style ={{ color: '#52d6f4'}}><strong>meticulously crafted a custom-built chessboard</strong></span>, 
+                ensuring both aesthetic appeal and functional precision. The core of the application's ingenuity lies in its 
+                dynamic board rendering system, which I implemented using Java's sophisticated Graphics2D framework. 
+                This system adeptly <span style ={{ color: '#52d6f4'}}><strong>handles real-time visualization</strong></span> of the game's state and the players' moves, 
+                <span style ={{ color: '#52d6f4'}}><strong> a testament to my adeptness in object-oriented programming and user interface development. </strong></span> 
+                Looking ahead, I am excited to further enhance this application's complexity and appeal by integrating a <span style ={{ color: '#52d6f4'}}><strong>chess AI. </strong></span>
+                For this, I plan to employ <span style ={{ color: '#52d6f4'}}><strong>advanced algorithms</strong></span> such as Minimax, aiming to provide a challenging and 
+                engaging gameplay experience. This enhancement not only underscores my commitment to continuous learning and 
+                improvement but also my ability to foresee and implement features that elevate user engagement and application value.
             </span>),
     },
     {
