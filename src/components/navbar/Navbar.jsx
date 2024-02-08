@@ -31,7 +31,7 @@ const Navbar = () => {
                         <img src="/github.png" alt="GitHub" />
                     </motion.a>
                     <motion.a 
-                        href="https://drive.google.com/file/d/1K9ByXmgG98jonXY5QWaLtLlOKxgVDbzn/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1IggEm6WCZ6ptwWcfWf5EM5RTKg0ShTfy/view?usp=sharing"
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5 }}
