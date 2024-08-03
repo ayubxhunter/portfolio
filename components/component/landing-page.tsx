@@ -150,7 +150,7 @@ export default function LandingPage() {
 
             <div className="relative">
               <Image
-                src="/picture1.jpg"
+                src="/picture.jpg"
                 width={400}
                 height={400}
                 alt="/PFP.jpg"
@@ -346,9 +346,7 @@ export default function LandingPage() {
               <div className="mt-4 flex gap-2">
                 <Badge>AWS S3</Badge>
                 <Badge>AWS Lambda</Badge>
-                <Badge>AWS CloudFront</Badge>
                 <Badge>React</Badge>
-                <Badge>JavaScript</Badge>
                 <Badge>Python</Badge>
               </div>
             </Link>
