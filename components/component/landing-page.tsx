@@ -16,43 +16,6 @@ import { Textarea } from "@/components/ui/textarea"
 import { Fascinate } from "next/font/google"
 
 export default function LandingPage() {
-  // const [formData, setFormData] = useState({
-  //   name: '',
-  //   email: '',
-  //   message: '',
-  // });
-
-  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-  //   setFormData({
-  //     ...formData,
-  //     [e.target.name]: e.target.value,
-  //   });
-  // };
-
-  // const handleSubmit = async (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   const response = await fetch('/api/submit', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //     body: JSON.stringify(formData),
-  //   });
-
-  //   if (response.ok) {
-  //     setFormData({
-  //       name: '',
-  //       email: '',
-  //       message: '',
-  //     });
-
-  //     alert('Form submitted successfully');
-
-  //   } else {
-  //     alert('Failed to submit the form');
-  //   }
-  // };
-
   return (
     <div className="flex min-h-[100dvh] flex-col bg-background text-foreground">
       <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-md">
@@ -187,11 +150,11 @@ export default function LandingPage() {
 
             <div className="relative">
               <Image
-                src="/PFP.jpg"
+                src="/picture1.jpg"
                 width={400}
                 height={400}
-                alt="Profile"
-                className="mx-auto h-[450px] w-[400px] rounded-full object-cover shadow-lg transition-all duration-500 hover:scale-105"
+                alt="/PFP.jpg"
+                className="mx-auto h-[400px] w-[400px] rounded-full object-cover shadow-lg transition-all duration-500 hover:scale-105"
               />
             </div>
 
