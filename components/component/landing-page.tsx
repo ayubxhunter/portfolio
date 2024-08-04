@@ -150,11 +150,11 @@ export default function LandingPage() {
 
             <div className="relative">
               <Image
-                src="/picture.jpg"
+                src="/image1.jpg"
                 width={400}
                 height={400}
                 alt="/PFP.jpg"
-                className="mx-auto h-[400px] w-[400px] rounded-full object-cover shadow-lg transition-all duration-500 hover:scale-105"
+                className="mx-auto h-[430px] w-[400px] rounded-full object-cover shadow-lg transition-all duration-500 hover:scale-105"
               />
             </div>
 
@@ -221,7 +221,7 @@ export default function LandingPage() {
         <li className="flex items-start gap-2">
           <Icons.CheckIcon className="h-5 w-5 text-primary" />
           <span>
-          Developing an internal tool to enhance process efficiency for the Apple TV editorial team
+            Developing an internal tool to enhance process efficiency for the Apple TV editorial team
           </span>
         </li>
         {/* <li className="flex items-start gap-2">
@@ -240,7 +240,7 @@ export default function LandingPage() {
 
             <div className="rounded-lg bg-muted p-6 transition-all duration-300 hover:scale-105">
               <h3 className="text-lg font-medium">Heastarter AI</h3>
-              <p className="mt-2 text-muted-foreground">Software Engineer Fellow | June 2024 - Present</p>
+              <p className="mt-2 text-muted-foreground">Software Engineer Fellow | July 2024 - Present</p>
               <ul className="mt-4 space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <Icons.CheckIcon className="h-5 w-5 text-primary" />
@@ -321,7 +321,7 @@ export default function LandingPage() {
                 <Badge>Java</Badge>
                 <Badge>OpenAI API</Badge>
                 <Badge>Spotify Web API</Badge>
-                <Badge>Firebase Cloud Storage</Badge>
+                <Badge>Firebase</Badge>
               </div>
             </Link>
 
@@ -381,7 +381,7 @@ export default function LandingPage() {
         <section id="contact" className="container mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold tracking-tight">Get in Touch</h2>
           <div className="mt-8">
-            <div className="rounded-lg bg-muted p-6 transition-all duration-300 hover:scale-105">
+            <div className="rounded-lg bg-muted p-6">
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
                   <Icons.MailIcon className="h-6 w-6 text-primary" />
