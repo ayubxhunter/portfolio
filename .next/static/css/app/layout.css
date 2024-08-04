@@ -805,11 +805,8 @@ video {
 .h-full {
   height: 100%;
 }
-.h-\[425px\] {
-  height: 425px;
-}
-.h-\[430px\] {
-  height: 430px;
+.h-\[300px\] {
+  height: 300px;
 }
 .min-h-\[100dvh\] {
   min-height: 100dvh;
@@ -840,6 +837,9 @@ video {
 }
 .w-min {
   width: min-content;
+}
+.w-\[300px\] {
+  width: 300px;
 }
 .max-w-7xl {
   max-width: 80rem;
@@ -994,6 +994,12 @@ video {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+.pt-4 {
+  padding-top: 1rem;
+}
+.pt-8 {
+  padding-top: 2rem;
 }
 .text-center {
   text-align: center;

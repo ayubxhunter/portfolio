@@ -154,7 +154,7 @@ export default function LandingPage() {
                 width={400}
                 height={400}
                 alt="/PFP.jpg"
-                className="mx-auto h-[430px] w-[400px] rounded-full object-cover shadow-lg transition-all duration-500 hover:scale-105"
+                className="mx-auto h-[400px] w-[400px] rounded-full object-cover shadow-lg transition-all duration-500 hover:scale-105"
               />
             </div>
 
