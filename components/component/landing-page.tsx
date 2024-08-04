@@ -150,7 +150,7 @@ export default function LandingPage() {
 
             <div className="relative">
               <Image
-                src="/image1.jpg"
+                src="/myImage.jpg"
                 width={400}
                 height={400}
                 alt="/PFP.jpg"
