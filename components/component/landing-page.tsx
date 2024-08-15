@@ -169,7 +169,7 @@ export default function LandingPage() {
                 Georgia Institute of Technology<br />
                 Bachelor of Science (BS) in Computer Science<br />
                 Expected Graduation: Dec 2025<br />
-                GPA: 3.7/4.0
+                GPA: 3.6/4.0
               </p>
             </div>
             <div>
@@ -221,7 +221,8 @@ export default function LandingPage() {
         <li className="flex items-start gap-2">
           <Icons.CheckIcon className="h-5 w-5 text-primary" />
           <span>
-            Developing an internal tool to enhance process efficiency for the Apple TV editorial team
+          Created an internal tool that utilizes Generative AI to create images and captions of exciting moments from MLS
+          games to be shown on the Apple TV saving our team over 10,000 hours of expected work per year
           </span>
         </li>
         {/* <li className="flex items-start gap-2">
@@ -245,7 +246,7 @@ export default function LandingPage() {
                 <li className="flex items-start gap-2">
                   <Icons.CheckIcon className="h-5 w-5 text-primary" />
                   <span>
-                  Developed projects from design to deployment working with a team while building AI applications
+                  Developing 5 AI projects, with the final project targeting 1,000 account creations or $1,000 in revenue
                   </span>
                 </li>
 
@@ -307,7 +308,7 @@ export default function LandingPage() {
             >
               <Image
                 src="/SPRA.png"
-                width={400}
+                width={900}
                 height={225}
                 alt="Project 1"
                 className="h-[225px] w-full rounded-lg object-cover"
@@ -317,12 +318,27 @@ export default function LandingPage() {
               An app that provides users with a engaging summary of their Spotify listening habits, accessible year-round! Unlike Spotify's own Wrapped feature, 
               which is available once a year, our app allows users to log in anytime to view a summary of their music listening statistics.
               </p>
-              <div className="mt-4 flex gap-2">
-                <Badge>Java</Badge>
-                <Badge>OpenAI API</Badge>
-                <Badge>Spotify Web API</Badge>
-                <Badge>Firebase</Badge>
-              </div>
+            </Link>
+
+            <Link
+              href="https://chat-bot-ruby-three.vercel.app"
+              className="rounded-lg bg-muted p-6 transition-all duration-300 hover:scale-105"
+              target="_blank"
+              prefetch={false}
+            >
+              <Image
+                src="/Arabicproj.png"
+                width={900}
+                height={225}
+                alt="Project 1"
+                className="h-[225px] w-full rounded-lg object-cover object-top"
+              />
+              <h3 className="mt-4 text-lg font-medium">Arabic Language Partner</h3>
+              <p className="mt-2 text-muted-foreground">
+              An interactive platform that helps users practice and learn Arabic through real-time conversations with a 
+              language partner. Perfect for English speakers looking to enhance their conversational
+               Arabic skills with a focus on dialect.
+              </p>
             </Link>
 
             <Link
@@ -333,7 +349,7 @@ export default function LandingPage() {
             >
               <Image
                 src="/image.png"
-                width={400}
+                width={900}
                 height={225}
                 alt="Project 1"
                 className="h-[225px] w-full rounded-lg object-cover"
@@ -343,12 +359,6 @@ export default function LandingPage() {
               Developing a scalable photo storage feature with AWS Lambda, using serverless functions to automatically handle
               increased traffic by instantiating multiple function instances, removing the need for manual scaling
               </p>
-              <div className="mt-4 flex gap-2">
-                <Badge>AWS S3</Badge>
-                <Badge>AWS Lambda</Badge>
-                <Badge>React</Badge>
-                <Badge>Python</Badge>
-              </div>
             </Link>
 
             <Link
@@ -359,7 +369,7 @@ export default function LandingPage() {
             >
               <Image
                 src="/budgetApp.png"
-                width={400}
+                width={900}
                 height={225}
                 alt="Project 3"
                 className="h-[225px] w-full rounded-lg object-cover"
@@ -368,11 +378,6 @@ export default function LandingPage() {
               <p className="mt-2 text-muted-foreground">
                 Developed a budgeting app to simplify financial management by integrating the 50-30-20 rule algorithm
               </p>
-              <div className="mt-4 flex gap-2">
-                <Badge>React</Badge>
-                <Badge>JavaScript</Badge>
-                <Badge>Tailwind CSS</Badge>
-              </div>
             </Link>
 
           </div>

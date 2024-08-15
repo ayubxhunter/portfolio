@@ -805,8 +805,11 @@ video {
 .h-full {
   height: 100%;
 }
-.h-\[300px\] {
-  height: 300px;
+.h-\[200px\] {
+  height: 200px;
+}
+.h-\[325px\] {
+  height: 325px;
 }
 .min-h-\[100dvh\] {
   min-height: 100dvh;
@@ -837,9 +840,6 @@ video {
 }
 .w-min {
   width: min-content;
-}
-.w-\[300px\] {
-  width: 300px;
 }
 .max-w-7xl {
   max-width: 80rem;
@@ -961,6 +961,9 @@ video {
 .object-cover {
   object-fit: cover;
 }
+.object-top {
+  object-position: top;
+}
 .p-4 {
   padding: 1rem;
 }
@@ -994,12 +997,6 @@ video {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
-}
-.pt-4 {
-  padding-top: 1rem;
-}
-.pt-8 {
-  padding-top: 2rem;
 }
 .text-center {
   text-align: center;
