@@ -327,7 +327,7 @@ export default function LandingPage() {
               prefetch={false}
             >
               <Image
-                src="/arabicproj.png"
+                src="/arabic.png"
                 width={900}
                 height={225}
                 alt="Ayub Hunter"
