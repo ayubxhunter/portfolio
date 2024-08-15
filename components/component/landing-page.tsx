@@ -327,10 +327,10 @@ export default function LandingPage() {
               prefetch={false}
             >
               <Image
-                src="/Arabicproj.png"
+                src="/arabicproj.png"
                 width={900}
                 height={225}
-                alt="Project 1"
+                alt="Ayub Hunter"
                 className="h-[225px] w-full rounded-lg object-cover object-top"
               />
               <h3 className="mt-4 text-lg font-medium">Arabic Language Partner</h3>
